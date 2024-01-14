@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Bitter', serif;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.mobilenav{
+    display: none;
+}
+.container{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+/* Side navbar start here */
+.nav{
+    position: relative;
+    width: 50px;
+    height: 715px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+}
+.nav img{
+   width: 35px;
+   height: 35px;
+   margin: 9px;
+}
+.nav i{
+    font-size: 18px;
+    margin-left: 17px;
+    color: rgb(149, 149, 149);
+}
+.nav i:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    padding: 2px 0px 0px 2px;
+}
+.nav .second{
+    margin-top: 70px;
+}
+.nav .second i{
+    margin-top: 30px;
+}
+.nav .third{
+    margin-top: 270px;
+}
+.nav .third i{
+    margin-top: 20px;
+}
+/* Side navbar ends here */
+/* profile start here */
+.profile{
+    width: 330px;
+    height: 715px;
+    background-color: rgb(240, 240, 240);
+}
+.name{
+    display: flex;
+    margin: 40px;
+}
+.name img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.p{
+    margin-left: 10px;
+}
+.p p{
+    position: relative;
+    bottom: 16px;
+    font-size: 13px;
+}
+.data p{
+    color: rgb(149, 149, 149);
+}
+.data{
+    margin-left: 53px;
+}
+.data .a{
+    position: relative;
+    bottom: 13px;
+}
+.data a:hover{
+    color: blue;
+    background-color: white;
+}
+.data .b{
+    position: relative;
+    bottom: 42px;
+}
+.data .c{
+    position: relative;
+    bottom: 70px;
+}
+.data .a p{
+    position: relative;
+    bottom: 20px;
+    font-size: 11px;
+}
+.data .b p{
+    position: relative;
+    bottom: 20px;
+    font-size: 11px;
+}
+.data .c p{
+    position: relative;
+    bottom: 20px;
+    font-size: 11px;
+}
+.data a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    width: 125px;
+    height: 40px;
+    bottom: 85px;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 11px 26px;
+}
+.recent{
+    position: relative;
+    bottom: 40px;
+    margin-left: 53px;
+}
+.recent p{
+    color: rgb(149, 149, 149);
+}
+.recent .a{
+    position: relative;
+    bottom: 13px;
+}
+.recent .b{
+    position: relative;
+    bottom: 42px;
+}
+.recent .c{
+    position: relative;
+    bottom: 70px;
+}
+.recent .a p{
+    position: relative;
+    bottom: -23px;
+    font-size: 11px;
+}
+.recent .b p{
+    position: relative;
+    bottom: -23px;
+    font-size: 11px;
+}
+.recent .c p{
+    position: relative;
+    bottom: -23px;
+    font-size: 11px;
+}
+.recent hr{
+    position: relative;
+    bottom: 12px;
+    width: 190px;
+    left: -44px;
+    color: black;
+}
+/* profile end here */
+/* account start here */
+.account{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 715px;
+}
+.chart{
+    padding-left: 40px;
+    height: 540px;
+    background-color: rgb(255, 255, 255);
+}
+.chart .text{
+    margin-left: 20px;
+    padding: 35px;
+}
+.chart p{
+    color: blue;
+    font-size: 16px;
+    margin-right:70px ;
+}
+.chart h2{
+    position: relative;
+    bottom: 16px;
+    /* font-size: 16px; */
+}
+.state{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.state .data{
+    /* display: flex; */
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 40px;
+    /* margin-left: 200px; */
+}
+.state .data p{
+    position: relative;
+    color: black;
+    bottom: 33px;
+    font-size: 12px;
+    color: rgb(149, 149, 149);
+}
+.data hr{
+    position: relative;
+    width: 160px;
+    border-color: blue;
+    height: 1px;
+    bottom: 40px;
+}
+.chart .jschart{
+    position: relative;
+    bottom: 80px;
+    margin-left: 50px;
+}
+.piechart{
+    position: relative;
+    /* bottom: 60px; */
+    display: flex;
+    width: 800px;
+    height: 285px;
+    background-color: white;
+}
+.piechart .data{
+    display: flex;
+}
+.piechart .text{
+    margin-left: 50px;
+}
+/* account start end */
+/* donut charts start */
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* html,
+body {
+    background: #ECF0F1;
+    padding: 10px;
+    color: #444;
+    font-family: 'Lato', Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+} */
+
+#percent {
+    display: block;
+    width: 160px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin: 50px auto 20px;
+    padding: 10px;
+    color: #1ABC9C;
+    font-family: 'Lato', Tahoma, Geneva, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+#donut {
+    display: block;
+    margin: 0px auto;
+    color: #1ABC9C;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    max-width: 600px;
+    margin: 12px auto;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+code {
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 0px 4px;
+}
+
+/* The relevant stuff is all below */
+
+/* $pie-main: hsl(168, 76%, 42%);
+$pie-text: #7F8C8D;
+$pie-shadow: #BDC3C7; */
+
+.donut-size {
+    font-size: 8em;
+}
+
+.pie-wrapper {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    margin: 0px auto;
+}
+
+.pie-wrapper .pie {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 1em, 1em, 0.5em);
+}
+
+.pie-wrapper .half-circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0.1em solid hsl(168, 76%, 42%);
+    border-radius: 50%;
+    clip: rect(0em, 0.5em, 1em, 0em);
+}
+
+.pie-wrapper .right-side {
+    transform: rotate(0deg);
+}
+
+.pie-wrapper .label {
+    position: absolute;
+    top: 0.52em;
+    right: 0.4em;
+    bottom: 0.4em;
+    left: 0.4em;
+    display: block;
+    background: none;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 35px;
+    line-height: 2.6em;
+    text-align: center;
+    cursor: default;
+    z-index: 2;
+}
+
+.pie-wrapper .smaller {
+    padding-bottom: 20px;
+    color: #BDC3C7;
+    font-size: .45em;
+    vertical-align: super;
+}
+
+.pie-wrapper .shadow {
+    width: 100%;
+    height: 100%;
+    border: 0.1em solid #BDC3C7;
+    border-radius: 50%;
+}
+/* donut charts ends */
+/* donut charts positions */
+.chartsa{
+    position: relative;
+    top: 92px;
+    right: 195px;
+    width: 122px;
+    height: 122px;
+}
+.chartsb{
+    position: relative;
+    top: -29px;
+    right: 30px;
+    width: 122px;
+    height: 122px;
+}.chartsc{
+    position: relative;
+    top: -151px;
+    right: -135px;
+    width: 122px;
+    height: 122px;
+}
+/* end */
+.section{
+    width: 290px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0px 15px 15px 0px;
+}
+.calculator{
+    margin-left: 25px;
+}
+.calculator hr{
+    width: 245px;
+    margin-right: 23px;
+}
+.cal a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-left: 18%;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 11px 50px;
+}
+.cal a:hover{
+    color: blue;
+    background-color: white;
+}
+.cal h5{
+    color: blue;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+/* slider */
+#slider-container {
+    display: flex;
+    align-items: center;
+}
+#percentage-slider {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#percentage-display {
+    font-size: 24px;
+}
+#percentaage-slider {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#percentage-displaay {
+    font-size: 24px;
+}
+/* Responsiveness  in 400px*/
+@media screen and (max-width: 400px){
+    .nav{
+        position: sticky;
+        width: 400px;
+        height: 50px;
+        top: 2000px;
+        left: 0;
+        background-color: #00000000;
+        z-index: 1;
+        display: none;
+    }
+    .nav .logo img{
+        width: 0;
+        height: 0;
+    }
+    .profile{
+        position: relative;
+        width: 1000px;
+        border-radius: 20px;
+    }
+    .account{
+        position: relative;
+        width: 400px;
+        right: 50px;
+    }
+    .piechart{
+        position: relative;
+        top: 288px;
+        left: 1px;
+        width: 400px;
+    }
+    .chartsa{
+        position: relative;
+        top: 275px;
+        left: -210px;
+    }.chartsb{
+        position: relative;
+        top: 153px;
+        left: -95px;
+    }.chartsc{
+        top: 31px;
+        position: relative;
+        left: 20px;
+    }
+    .donut-size{
+        font-size: 4em;
+    }
+    .pie-wrapper .label {
+        top: -20px;
+    }
+     .section {
+        position: relative;
+        width: 400px;
+        top: 460px;
+        border-radius: 20px;
+    }
+    .mobilenav{
+        position:fixed;
+        top: 620px;
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100px;
+        z-index: 5;
+    }
+    .mobilenav i{
+        color: rgb(141, 141, 141);
+        margin: 5px 0px 0px 50px;
+    }
+}
+/* Responsiveness for 600px */
+@media screen and (max-width: 600px) and (min-width:401px){
+    .nav{
+        display: none;
+    }
+    .profile{
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .profile .aa{
+        margin-left: 25%;
+    }
+    .account{
+        position: relative;
+        width: 600px;
+        right: 50px;
+    }
+    .piechart{
+        position: relative;
+        top: 288px;
+        left: 1px;
+        width: 100%;
+    }
+    .chartsa{
+        position: relative;
+        top: 250px;
+        left: -260px;
+    }.chartsb{
+        position: relative;
+        top: 127px;
+        left: -180px;
+    }.chartsc{
+        position: relative;
+        top: 5px;
+        left: -100px;
+    }
+    .donut-size{
+        font-size: 4em;
+    }
+    .pie-wrapper .label {
+        top: -20px;
+    }
+     .section {
+        position: relative;
+        width: 100%;
+        top: 470px;
+        border-radius: 20px;
+    }
+    .section .calculator{
+        margin-left: 25%;
+    }
+    .section hr{
+        margin-right: 310px;
+    }
+    .mobilenav{
+        position:fixed;
+        top: 620px;
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100px;
+        z-index: 5;
+    }
+    .mobilenav i{
+        color: rgb(141, 141, 141);
+        margin: 5px 0px 0px 85px;
+    }
+}
