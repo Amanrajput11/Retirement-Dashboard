@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar starts here -->
+        <div class="mobilenav">
+            <div class="item">
+                <i class="fa fa-home"></i>
+                <i class="fa-regular fa-newspaper"></i>
+                <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <!-- hfg -->
+        <div class="nav">
+            <div class="logo">
+                <img src="assest/butterfly.png" alt="">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="second">
+                <i class="fa fa-home"></i>
+                <i class="fa-regular fa-newspaper"></i>
+                <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="third">
+                <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+        </div>
+        <!-- navbar starts ends -->
+        <!-- profile starts here -->
+        <div class="profile">
+            <div class="aa">
+            <div class="name">
+                <img src="assest/1630752207027.jpg" alt="logo">
+                <div class="p">
+                <h2>Hi Mike,</h2>
+                <p>Welcome back.</p>
+                </div>
+            </div>
+            <div class="data">Today
+                <div class="a">
+                    <h1>19,892</h1>
+                    <p>Account Balance</p>
+                </div>
+                <div class="b">
+                    <h2>4,000</h2>
+                    <p>Year-to-Date Contribution</p>
+                </div>
+                <div class="c">
+                    <h2>1,892</h2>
+                    <p>Total Intrest</p>
+                </div>
+                <a href="">i want to &#11206;</a>
+            </div>
+            <div class="recent">Recent transaction
+                <div class="a">
+                    <p>2020-07-07</p>
+                    <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                    <hr>
+                </div>
+                <div class="b">
+                    <p>2020-08-21</p>
+                    <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                    <hr>
+                </div>
+                <div class="c">
+                    <p>2020-08-16</p>
+                    <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                    <hr>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- profile starts here -->
+        <!-- account start here -->
+        <div class="account">
+            <div class="chart">
+                <div class="text">
+                <p>Retirement income</p>
+                <h2>starting year 2056</h2>
+                </div>
+                <div class="state">
+                    <div class="data">
+                        <h2>$300,000</h2>
+                        <p>My Goal</p>
+                        <hr>
+                    </div>
+                    <div class="data">
+                        <h2>59%</h2>
+                        <p>Goal Achieved</p>
+                        <hr>
+                    </div>
+                    <div class="data">
+                        <h2>$300</h2>
+                        <p>Est. Monthly Income</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="jschart">
+                    <h3>Contribution Overtime</h3>
+                    <!-- gsdf -->
+                    <div id="chartContainer" style="height: 300px; width: 95%;"></div>
+                    <!-- gsdf -->
+                </div>
+            </div>
+        <!-- account start here -->
+            <!-- piechart start here -->
+            <div class="piechart">
+                <div class="data">
+                <div class="text">
+                <h3>How do i compare to my peers?</h3>
+                <p>These Number Represent Current Goal Achievment</p>
+                <h5>Age: Under 30 &#11206;</h5>
+                <h5>Salary: k 20-k 30 &#11206;</h5>
+                <h5>Gendre: Male &#11206;</h5>
+                </div>
+                <div class="charts">
+                    <div class="chartsa"> <div id="specificChart" class="donut-size">
+                        <div class="pie-wrapper">
+                            <span class="label">
+                                <span class="num">79</span><span class="smaller">%</span>
+                            </span>
+                            <div class="pie">
+                                <div class="left-side half-circle"></div>
+                                <div class="right-side half-circle"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="chartsb">
+                        <div id="specificCharta" class="donut-size">
+                            <div class="pie-wrapper">
+                                <span class="label">
+                                    <span class="num">79</span><span class="smaller">%</span>
+                                </span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chartsc">
+                        <div id="specificChartb" class="donut-size">
+                            <div class="pie-wrapper">
+                                <span class="label">
+                                    <span class="num">79</span><span class="smaller">%</span>
+                                </span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            <!-- piechart end here -->
+            <!-- calculator start here -->
+        <div class="section">
+            <div class="calculator">
+                <div class="slider">
+                    <h4>Employee contribution</h4>
+                    <div id="slider-container">
+                        <input type="range" min="0" max="100" value="50" id="percentage-slider">
+                        <div id="percentage-display">50%</div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <h4>Retirement Strategy</h4>
+                    <div id="slider-container">
+                        <input type="range" min="0" max="100" value="50" id="percentaage-slider">
+                        <div id="percentage-displaay">50%</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="cal">
+                    <h4>Employer contribution 8.4%</h4>
+                    <h4>Intrest Rate 5%</h4>
+                    <a href="">Update</a>
+                    <h5>View Help Docs:&gt;</h5>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+            <!-- calculator start here -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+</html>
