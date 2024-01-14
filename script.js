@@ -33,7 +33,7 @@ function updateDonutChart(el, percent, donut) {
 }
 
 // Pass in a number for the percent
-updateDonutChart('#specificChart', 70, true);
+updateDonutChart('#specificChart', 78, true);
 
 $('#percent').on('input', function () {
     var percent = $(this).val();
